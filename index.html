@@ -7,33 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="input">
-            <input type="text">
+    <div class="container" id="calculator">
+        <div class="input" >
+            <input id="display" type="text" readonly>
         </div>
         <div class="buttons-container">
-            <button type="button">7</button>
-            <button type="button">8</button>
-            <button type="button">9</button>
-            <button type="button">/</button>
+            <button class="button button-clear" type="button" onclick="clearDisplay()">ac</button>
+            <button class="button button-clear" type="button" onclick="backspace()">c</button>
         </div>
         <div class="buttons-container">
-            <button type="button">4</button>
-            <button type="button">5</button>
-            <button type="button">6</button>
-            <button type="button">x</button>
+            <button class="button" type="button" onclick="putInDisplay('7')">7</button>
+            <button class="button" type="button" onclick="putInDisplay('8')">8</button>
+            <button class="button" type="button" onclick="putInDisplay('9')">9</button>
+            <button class="button" type="button" onclick="putInDisplay('\/')">/</button>
         </div>
         <div class="buttons-container">
-            <button type="button">1</button>
-            <button type="button">2</button>
-            <button type="button">3</button>
-            <button type="button">&minus;</button>
+            <button class="button" type="button" onclick="putInDisplay('4')">4</button>
+            <button class="button" type="button" onclick="putInDisplay('5')">5</button>
+            <button class="button" type="button" onclick="putInDisplay('6')">6</button>
+            <button class="button" type="button" onclick="putInDisplay('*')">x</button>
         </div>
         <div class="buttons-container">
-            <button type="button">&sdot;</button>
-            <button type="button">0</button>
-            <button type="button">=</button>
-            <button type="button">+</button>
+            <button class="button" type="button" onclick="putInDisplay('1')">1</button>
+            <button class="button" type="button" onclick="putInDisplay('2')">2</button>
+            <button class="button" type="button" onclick="putInDisplay('3')">3</button>
+            <button class="button" type="button" onclick="putInDisplay('-')">&minus;</button>
+        </div>
+        <div class="buttons-container">
+            <button class="button" type="button" onclick="putInDisplay('.')">&sdot;</button>
+            <button class="button" type="button" onclick="putInDisplay('0')">0</button>
+            <button class="button" type="button" onclick="calculate()">=</button>
+            <button class="button" type="button" onclick="putInDisplay('+')">+</button>
         </div>
     </div>
     <script src="main.js"></script>

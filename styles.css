@@ -65,7 +65,7 @@ input[type="text"] {
     font-size: 35px;
 }
 
-button {
+.button {
     font-size: 24px;
     border: none;
     width: 53px;
@@ -81,8 +81,15 @@ button {
 
 }
 
+.button.button-clear {
+    width: 48%;
+    height: 35px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
 .buttons-container {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
